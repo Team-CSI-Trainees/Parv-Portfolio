@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    background-color: black;
+    overflow-x: hidden;
+    color: white;
+}
+
+.container header {
+    padding: 10px 60px;
+    justify-content: space-between;
+}
+
+header .logo {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.logo span {
+    color:#FFDE59;
+    font-size: 70px;
+}
+
+header nav {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 25px;
+    font-weight: 500;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: #FFDE59;
+}
+.outer {
+    margin:5px 60px
+}
+
+.main-one h1 {
+    font-size: 70px;
+}
+
+.main-one span {
+    font-weight: 600;
+    font-size: 50px;
+    color:#FFDE59;
+}
+
+.main-one p {
+    font-size: 17px;
+    padding: 10px 0;
+}
+
+.main2 img {
+    width: 450px;
+    height: 400px;
+} 
+
+@media only screen and (max-width:992px) {
+    .container header {
+        padding: 2vh;
+    }
+
+    .flex {
+       flex-wrap: wrap;
+    }
+
+    header .logo{ 
+        font-size: 4vh;
+        font-weight: 600;
+        margin-left: 1vh
+    }
+
+    .logo span {
+        color:#FFDE59;
+        font-size: 4vh;
+    }
+
+    nav ul li a {
+    font-size: 2vh;
+    padding: 1vh;
+    }
+    
+    .main-one h1 {
+        font-size: 7vh;
+    }
+    
+    .main-one span {
+        font-weight: 600;
+        font-size: 5vh;
+        color:#FFDE59;
+    }
+    
+    .main-one p {
+        font-size: 3vh;
+        padding: 10px 0;
+    }
+    
+    .main2 img {
+        width: 25vh;
+        height: 25vh;
+        padding: 0 12vh;
+        margin-top:-5vh
+    } 
+}
+.Project{
+    align-items:right;
+}
+.Project h1 {
+    font-size: 50px;
+}
+
+.about img{ 
+    width: 200px;
+    height: auto ;
+    padding: 30x 50px;
+
+}
+
+
+
+.about-one {
+    width: 55%;
+    padding: 0 60px;
+}
+
+.about-one h1 {
+    font-size: 50px;
+}
+
+.about-one p {
+    padding: 10px 0;
+    width: 95%;
+    text-align: justify;
+}
+
+.about-one span {
+    font-size: 30px;
+    color: #FFDE59;
+}
+
+.btns {
+    margin: 15px 0;
+    justify-content: right;
+}
+
+.btns button {
+    background-color: #FFDE59;
+    padding: 8px 17px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all ease-out 0.2s;
+    outline: none;
+    border: none;
+}
+
+.btns button:hover {
+    transform: scale(1.02);
+}
+
