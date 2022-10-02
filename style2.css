@@ -13,22 +13,22 @@
 
 .container {
     background-color: black;
-    overflow-x: hidden;
     color: white;
 }
 
 .container header {
-    padding: 10px 60px;
+   margin: 0rem 2rem;
     justify-content: space-between;
 }
 
 header .logo {
+    margin:0rem 4rem;
     font-size: 45px;
     font-weight: 600;
 }
 
 .logo span {
-    color:#FFDE59;
+    color: #FFDE59;
     font-size: 70px;
 }
 
@@ -42,7 +42,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
     padding: 10px 25px;
     font-weight: 500;
     color: white;
@@ -51,10 +51,17 @@ nav ul li a {
 nav ul li a:hover {
     color: #FFDE59;
 }
-.outer {
-    margin:5px 60px
+.nav {
+    margin: 2rem 2rem;
 }
-
+.mainflex {
+    margin: 2rem 2rem;
+    display:flex ;
+}
+.main-one {
+    margin: 4rem 0rem 1rem 1rem;
+    padding: 4rem 0rem 3rem 4rem;
+}
 .main-one h1 {
     font-size: 70px;
 }
@@ -66,22 +73,212 @@ nav ul li a:hover {
 }
 
 .main-one p {
-    font-size: 17px;
-    padding: 10px 0;
+    width:80%;
+    font-size: 20px;
 }
 
 .main2 img {
-    width: 450px;
-    height: 400px;
-} 
+    width: 30rem;
+    height: 30rem;
+    margin: 0rem 0rem 2rem 2rem;
+}
+.aboutflex {
+    margin:1rem 1rem;
+    display:flex ;
+    
+}
 
+.aboutflex img {
+    width:14rem;
+    height:17rem;
+    padding: 30px 15px 30px 90px;
+
+}
+
+.about-one {
+    width: 70%;
+    padding: 2rem 0rem 2rem 4rem;
+}
+
+.about-one h1 {
+    font-size: 50px;
+}
+
+.about-one p {
+    padding: 10px 0;
+    width: 95%;
+}
+
+.about-one span {
+    font-size: 35px;
+    color: #FFDE59;
+}
+
+.btns {
+    margin: 15px 0; 
+    display: flex; 
+
+}
+.btn1 a {
+    color: black;
+    text-decoration: none;
+}
+.btn2{
+    margin: 0px 10px;
+}
+.btns button {
+    background-color: #FFDE59;
+    padding: 8px 17px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.btns button:hover {
+    transform: scale(1.02);
+}
+.Project{
+    text-align: center;
+}
+.Project img{
+    margin: 1rem 1rem;
+    padding: 1rem 1rem;
+    height: 15rem;
+    width: 15rem;
+}
+.Project h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+.Project-flex{
+    display: flex;
+    margin:1rem 1rem;
+    padding: 1rem 1rem;
+    justify-content: space-between;
+}
+.Project1 {
+    background-color: #ffde59;
+    margin:3rem 2rem;
+    padding:3rem 2rem;
+    border-radius: 20px;
+}
+.pbg{
+    color: black;
+    font-weight:700;
+}
+.content {
+    color: black;
+    word-wrap:normal;
+    font-weight:500;
+    text-align: center;
+    padding: 1rem 1rem;
+}
+.contact {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.31);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.31);
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+.contact h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.contact h1 span {
+    color: #FFDE59;
+}
+
+.contact .box {
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.box div {
+    width: 40%;
+    margin: auto;
+}
+
+.contact .box input {
+    width: 90%;
+    outline: none;
+    border: none;
+    background-color: #FFDE59;
+    padding: 9px 40px;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.box div {
+    position: relative;
+}
+
+.box div i {
+    position: absolute;
+    font-size: 20px;
+    color: black;
+    top: 20px;
+    left: 20px;
+}
+
+.contact .box textarea {
+    margin-top: 20px;
+    background-color: transparent;
+    padding: 10px 30px;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+    border: 1px solid #FFDE59;
+    outline: none;
+    margin-left: 30px;
+}
+
+.send {
+    width: 100%;
+    background: linear-gradient(#FFDE59, #ddb100);
+    font-size: 19px !important;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 9px 40px;
+    margin: 30px 40px !important;
+}
+
+footer {
+    justify-content: center;
+    padding: 10px 70px;
+    background: linear-gradient(#FFDE59, #ddb100);
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+footer .social a {
+    font-size: 30px;
+    cursor: pointer;
+    padding-right: 4px;
+    color:black;
+    justify-content: center;
+}
+
+
+.social i:hover {
+    color: black;
+    transform: scale(1.3);
+}
 @media only screen and (max-width:992px) {
     .container header {
-        padding: 2vh;
+        margin: 2vh ;
+        padding: 2vh ;
     }
 
     .flex {
-       flex-wrap: wrap;
+       flex-wrap:wrap;
     }
 
     header .logo{ 
@@ -99,83 +296,39 @@ nav ul li a:hover {
     font-size: 2vh;
     padding: 1vh;
     }
-    
+    .mainflex {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
     .main-one h1 {
-        font-size: 7vh;
+        font-size: 5vh;
     }
     
     .main-one span {
         font-weight: 600;
-        font-size: 5vh;
+        font-size: 3vh;
         color:#FFDE59;
     }
     
     .main-one p {
-        font-size: 3vh;
-        padding: 10px 0;
+        width: 80%;
+        font-size: 2vh;
     }
     
     .main2 img {
-        width: 25vh;
-        height: 25vh;
-        padding: 0 12vh;
-        margin-top:-5vh
+        width: 30vh;
+        height: 30vh;
     } 
+    .aboutflex {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .Project h1 {
+        margin: 0rem 8rem;
+        padding:0rem 8rem;
+    }
+    .Project-flex{
+        flex-wrap: wrap;
+        margin:0rem 8rem;
+    }
 }
-.Project{
-    align-items:right;
-}
-.Project h1 {
-    font-size: 50px;
-}
-
-.about img{ 
-    width: 200px;
-    height: auto ;
-    padding: 30x 50px;
-
-}
-
-
-
-.about-one {
-    width: 55%;
-    padding: 0 60px;
-}
-
-.about-one h1 {
-    font-size: 50px;
-}
-
-.about-one p {
-    padding: 10px 0;
-    width: 95%;
-    text-align: justify;
-}
-
-.about-one span {
-    font-size: 30px;
-    color: #FFDE59;
-}
-
-.btns {
-    margin: 15px 0;
-    justify-content: right;
-}
-
-.btns button {
-    background-color: #FFDE59;
-    padding: 8px 17px;
-    font-size: 18px;
-    font-weight: 600;
-    margin: 0 10px;
-    cursor: pointer;
-    transition: all ease-out 0.2s;
-    outline: none;
-    border: none;
-}
-
-.btns button:hover {
-    transform: scale(1.02);
-}
-
