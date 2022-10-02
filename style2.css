@@ -199,13 +199,18 @@ nav ul li a:hover {
     margin-top: 40px;
 }
 
-.box div {
-    width: 40%;
-    margin: auto;
+.box {
+    margin: 5rem 28rem;
+    padding: 2rem;
+    background-color: rgba(255,255,255,0.85);
+    border-radius: 25px;
+}
+.contact {
+    text-align:center;
 }
 
 .contact .box input {
-    width: 90%;
+    width: 80%;
     outline: none;
     border: none;
     background-color: #FFDE59;
@@ -216,9 +221,12 @@ nav ul li a:hover {
 }
 
 .box div {
+    margin:1rem 1rem;
     position: relative;
 }
-
+::placeholder {
+    color: black;
+}
 .box div i {
     position: absolute;
     font-size: 20px;
@@ -228,30 +236,32 @@ nav ul li a:hover {
 }
 
 .contact .box textarea {
-    margin-top: 20px;
+    width: 90%;
+    margin-left: -10px;
+    position: relative;
     background-color: transparent;
-    padding: 10px 30px;
-    color: white;
+    padding: 1rem;
+    color: black;
     font-size: 18px;
     border-radius: 20px;
-    border: 1px solid #FFDE59;
+    border: 2px solid #FFDE59;
     outline: none;
-    margin-left: 30px;
+    resize: none;
 }
 
 .send {
-    width: 100%;
     background: linear-gradient(#FFDE59, #ddb100);
-    font-size: 19px !important;
+    font-size: 19px ;
     font-weight: 600;
     cursor: pointer;
-    padding: 9px 40px;
-    margin: 30px 40px !important;
+}
+.send2 {
+    margin-right:2rem;
 }
 
 footer {
     justify-content: center;
-    padding: 10px 70px;
+    padding: 10px 60px;
     background: linear-gradient(#FFDE59, #ddb100);
     font-size: 20px;
     font-weight: 600;
@@ -330,5 +340,8 @@ footer .social a {
     .Project-flex{
         flex-wrap: wrap;
         margin:0rem 8rem;
+    }
+    .box {
+        margin: 5rem 9rem;
     }
 }
